@@ -91,7 +91,7 @@ dishRouter.route('/:dishId/comments')
     		err = new Error('Dish ' + req.params.dishId
     			+ ' not found');
     		err.status = 404;
-    		return next(err)
+    		return next(err);
     	}
         
     }, (err) => next(err))
@@ -113,7 +113,7 @@ dishRouter.route('/:dishId/comments')
     		err = new Error('Dish ' + req.params.dishId
     			+ ' not found');
     		err.status = 404;
-    		return next(err)
+    		return next(err);
     	}
     }, (err) => next(err))
     .catch((err) => next(err));
@@ -143,7 +143,7 @@ dishRouter.route('/:dishId/comments')
     		err = new Error('Dish ' + req.params.dishId
     			+ ' not found');
     		err.status = 404;
-    		return next(err)
+    		return next(err);
     	}
     }, (err) => next(err))
     .catch((err) => next(err));    
